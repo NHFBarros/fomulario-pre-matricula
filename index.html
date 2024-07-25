@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escola Virtual</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Escola Virtual</h1>
+        <h2>Formulário de Pré-Matrícula</h2>
+
+        <div id="linha"></div>
+
+        <div id="main">
+            <div id="dadosPessoais">
+                <div id="titulo">
+                    <h3>Dados Pessoais:</h3>
+                </div>
+
+                <div id="form">
+                    <fieldset id="dados">
+                        <div class="form">
+                            <label for="nomeA">Nome do Aluno: </label>
+                            <input type="text" name="nomeA" id="nomeA" required>
+                        </div>
+
+                        <div class="form">
+                            <label for="nasc" id="nasc">Nascimento (dd/mm/aaaa): </label>
+                            <div class="form">
+                                <input type="number" name="nasc-dia" id="nasc-dia" min="1" max="31" required>
+                            </div>
+
+                            <div class="form">
+                                /<input type="number" name="nasc-mes" id="nasc-mes" min="1" max="12" required>
+                            </div>
+
+                            <div class="form">
+                                /<input type="number" name="nasc-ano" id="nasc-ano" min="1900" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <label for="nomeM">Nome da Mãe: </label>
+                            <input type="text" name="nomeM" id="nomeM" required>
+                        </div>
+
+                        <div class="form">
+                            <label for="nomeP">Nome do Pai: </label>
+                            <input type="text" name="nomeP" id="nomeP" required>
+                        </div>
+
+                        <div id="telefoner">
+                            <div class="form">
+                                <label for="telefone">Telefone: </label>
+                                DDD (<input type="text" name="ddd" id="ddd" maxlength="2" required>)
+                                Tel: <input type="text" name="tel" id="tel" maxlength="9" required>
+                                Ramal: <input type="text" name="ramal" id="ramal" maxlength="4" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <label for="email">E-Mail: </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div id="informacoesMatricula">
+                <div id="titulo">
+                    <h3>Informações de Matricula:</h3>
+                </div>
+
+                <div id="form1">
+                    <div id="checkboxd">
+                        <label for="turma">Série: </label>
+                        <select name="turma" id="turma" required>
+                            <option value="">Selecione</option>
+                            <option value="Pre Escolar">Pre Escolar</option>
+                            <option value="1ª Ano">1ª Ano</option>
+                            <option value="2ª Ano">2ª Ano</option>
+                            <option value="3ª Ano">3ª Ano</option>
+                            <option value="4ª Ano">4ª Ano</option>
+                            <option value="5ª Ano">5ª Ano</option>
+                            <option value="6ª Ano">6ª Ano</option>
+                            <option value="7ª Ano">7ª Ano</option>
+                            <option value="8ª Ano">8ª Ano</option>
+                            <option value="9ª Ano">9ª Ano</option>
+                            <option value="1">1° Médio</option>
+                            <option value="2">2° Médio</option>
+                            <option value="3">3° Médio</option>
+                        </select>
+                    </div>
+
+
+                    <div id="turnor">
+                        <div class="radio">
+                            <label for="turno">Turno: </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="turno" value="manha" id="manha" required><label for="manha">Manhã</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="turno" value="tarde" id="tarde" required><label for="tarde">Tarde</label>
+                        </div>
+                    </div>
+
+                    <div id="ativExtrac">
+                        <div class="ativExtrac">
+                            <label for="ativExtra">Atividades Extracurrículares:</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="info" value="Informática"><label for="info">Informática</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="musica" value="Música"><label for="musica">Música</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="balet" value="Ballet"><label for="balet">Ballet</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="pintura" value="Pintura"><label for="pintura">Pintura</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="judo" value="Judô"><label for="judo">Judô</label>
+                        </div>
+                        <div class="ativExtrac">
+                            <input type="checkbox" name="ativExtra" id="futebol" value="Futebol"><label for="futebol">Futebol</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="botoes">
+            <div class="botao">
+                <input type="submit" value="Enviar Formulário">
+            </div>
+
+            <div class="botao">
+                <input type="reset" value="Limpar Campos">
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
